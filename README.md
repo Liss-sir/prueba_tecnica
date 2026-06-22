@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Indicaciones para su ejecución
 
-## Getting Started
+## Requisitos
 
-First, run the development server:
+Antes de ejecutar el proyecto asegurarse de tener instalado:
+
+* Node.js 20 o superior
+* npm
+* Docker Desktop (opcional, para ejecución mediante contenedores)
+
+## Instalación
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/Liss-sir/prueba_tecnica.git
+```
+
+Ingresar al directorio del proyecto:
+
+```bash
+cd pruebatecnica
+```
+
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+## Ejecución en desarrollo
+
+Iniciar el servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+La aplicación estará disponible en:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Construcción para producción
 
-## Learn More
+Generar la versión de producción:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ejecutar la aplicación en modo producción:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm start
+```
 
-## Deploy on Vercel
+## Ejecución con Docker
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Construir la imagen:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+docker build -t portal-programas .
+```
+
+Ejecutar el contenedor:
+
+```bash
+docker run -p 3000:3000 portal-programas
+```
+
+La aplicación estará disponible en:
+
+```text
+http://localhost:3000
+```
+
+## Ejecución con Docker Compose
+
+Construir y ejecutar el proyecto:
+
+```bash
+docker compose up --build
+```
+
+Para detener los contenedores:
+
+```bash
+docker compose down
+```
