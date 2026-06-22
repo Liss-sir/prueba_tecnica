@@ -1,0 +1,44 @@
+[
+  {
+    "id": "SENA-2301",
+    "nombre": "Análisis y Desarrollo de Software",
+    "nivel": "Tecnólogo",
+    "modalidad": "Mixta",
+    "duracion": "24 meses"
+  },
+  {
+    "id": "SENA-1185",
+    "nombre": "Producción Agropecuaria Ecológica",
+    "nivel": "Técnico",
+    "modalidad": "Presencial",
+    "duracion": "18 meses"
+  },
+  {
+    "id": "SENA-4402",
+    "nombre": "Diseño e Integración de Multimedia",
+    "nivel": "Tecnólogo",
+    "modalidad": "Virtual",
+    "duracion": "20 meses"
+  },
+  {
+    "id": "SENA-9921",
+    "nombre": "Cocina Tradicional Colombiana",
+    "nivel": "Curso Corto",
+    "modalidad": "Presencial",
+    "duracion": "3 meses"
+  },
+  {
+    "id": "SENA-7733",
+    "nombre": "Ciberseguridad Aplicada",
+    "nivel": "Especialización",
+    "modalidad": "Virtual",
+    "duracion": "12 meses"
+  },
+  {
+    "id": "SENA-5519",
+    "nombre": "Manejo Ambiental Forestal",
+    "nivel": "Tecnólogo",
+    "modalidad": "Mixta",
+    "duracion": "22 meses"
+  }
+]
