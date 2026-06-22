@@ -25,7 +25,7 @@ export default function HomePage() {
 
         <div className="relative mx-auto max-w-6xl px-6 py-24">
           <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1 text-sm text-white backdrop-blur">
-            Servicio Nacional de Aprendizaje
+            Inscripcion a programas de formacion
           </span>
 
           <h1 className="mt-8 max-w-2xl text-4xl font-semibold leading-tight text-white md:text-5xl">
@@ -34,9 +34,7 @@ export default function HomePage() {
 
           <p className="mt-6 max-w-2xl text-lg text-white/80">
             Bienvenido al módulo de búsqueda e inscripción a programas de
-            formación. Encuentra rutas técnicas, tecnológicas y cursos cortos
-            diseñados para fortalecer tu proyecto de vida y los sectores
-            productivos del país.
+            formación. Este dashboard a sido creado por mero gusto del desarrollador.
           </p>
 
           {/* Cards */}
@@ -56,7 +54,7 @@ export default function HomePage() {
             <InfoCard
               icon={<GraduationCap size={18} />}
               title="Inscríbete"
-              description="Simulación guiada con confirmación."
+              description="incripcion a los programas de formacion disponibles."
             />
           </div>
 
@@ -71,7 +69,7 @@ export default function HomePage() {
         {/* barra verde */}
         <div className="bg-green-700">
           <div className="mx-auto grid max-w-6xl gap-6 px-6 py-4 text-white md:grid-cols-4">
-            <Stat title="PROGRAMAS" value="+10 rutas" />
+            <Stat title="PROGRAMAS" value="6 rutas" />
             <Stat title="MODALIDADES" value="Virtual · Presencial · Mixta" />
             <Stat title="INSCRIPCIÓN" value="100% guiada" />
             <Stat title="COBERTURA" value="Urbano y rural" />
@@ -97,33 +95,14 @@ export default function HomePage() {
           <FeatureCard
             icon={<Clock3 />}
             title="Inscripción ágil"
-            description="Simula tu inscripción en segundos y recibe confirmación inmediata."
+            description="Realiza tu inscripción en segundos y recibe confirmación inmediata."
           />
-        </div>
-
-        {/* CTA */}
-        <div className="mt-16 rounded-3xl border border-slate-200 bg-white p-12 text-center shadow-sm">
-          <h2 className="text-4xl font-bold text-slate-900">
-            ¿List@ para encontrar tu programa?
-          </h2>
-
-          <p className="mx-auto mt-4 mb-10 max-w-2xl text-slate-500">
-            Entra al buscador, aplica filtros por modalidad y guarda tu cupo
-            simulado en segundos.
-          </p>
-
-          <Link
-            href="/programas"
-            className="mt-8 rounded-full bg-violet-700 px-8 py-4 font-medium text-white transition hover:bg-violet-800"
-          >
-            Explorar programas →
-          </Link>
         </div>
       </section>
 
       {/* FOOTER */}
       <footer className="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
-        Simulación educativa · Inspirada en el Manual de Identidad Visual del
+        Simulacion inspirada en el manual de identidad visual del
         SENA.
       </footer>
     </main>

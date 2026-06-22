@@ -88,7 +88,7 @@ export default function ConfirmarInscripcionModal({
 
         {/* Texto */}
         <p className="mt-6 text-slate-600">
-          Al confirmar, simularemos el registro de tu cupo en este
+          Al confirmar, se continuara con el registro de tu cupo en este
           programa.
         </p>
 

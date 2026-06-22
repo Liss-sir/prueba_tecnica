@@ -10,7 +10,7 @@ import ConfirmarInscripcionModal from "@/components/ConfirmarInscripcionModal";
 import CargandoModal from "@/components/CargandoModal";
 import InscripcionExitosaModal from "@/components/InscripcionExitosaModal";
 import FormularioInscripcionModal from "@/components/FormularioInscripcionModal";
-
+import { useProgramaStore } from "@/store/programaStore";
 import Link from "next/link";
 
 const programas = programasData as Programa[];
@@ -18,10 +18,8 @@ const programas = programasData as Programa[];
 export default function ProgramasPage() {
   const [busqueda, setBusqueda] = useState("");
   const [modalidad, setModalidad] = useState("Todas");
-
-  const [programaSeleccionado, setProgramaSeleccionado] =
-  useState<Programa | null>(null);
-    
+  const {programaSeleccionado,setProgramaSeleccionado,} = useProgramaStore();
+ 
   const [cargando, setCargando] = useState(false);
 
   const [inscripcionExitosa, setInscripcionExitosa] =
@@ -90,9 +88,7 @@ export default function ProgramasPage() {
                 type="text"
                 placeholder="Busca un programa por nombre..."
                 value={busqueda}
-                onChange={(e) =>
-                  setBusqueda(e.target.value)
-                }
+                onChange={(e) =>setBusqueda(e.target.value)}
                 className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-2xl bg-slate-50 outline-none text-slate-800 placeholder:text-slate-400"
               />
             </div>
